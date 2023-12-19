@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config()
 const {
     obtenerInicio, 
     obtenerTodosLosUsuarios, 
@@ -18,8 +19,8 @@ app.get("/usuarios/:id", obtenerPorId)
 app.post("/usuarios", crearUsuario)
 app.put("/usuarios/:id", actualizarUsuario)
 
-const PUERTO = 5001
-app.listen(PUERTO, ()=>{
-    console.log(`Servidor conectado al puerto ${PUERTO}`)
+
+app.listen(process.env.PORT, ()=>{
+    console.log(`Servidor conectado al puerto ${process.env.PORT}`)
 })
 
