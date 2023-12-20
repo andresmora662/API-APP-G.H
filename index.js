@@ -5,7 +5,7 @@ const {
     obtenerTodosLosUsuarios, 
     obtenerPorId, 
     crearUsuario,
-    actualizarUsuario} = require("./controladores/usuarios.controlador")
+    actualizarUsuario} = require("./controladores/index")
 const app = express();
 app.use(express.json());
 

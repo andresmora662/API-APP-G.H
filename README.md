@@ -23,6 +23,9 @@ B. Modularizar
 3.3 Se exportan las funciones con "module.export={}"
 3.4 Se importan al archivo index (principal) "const {nombre de la funcion} = require("./nombre del archivo")"
 3.5 Finalmente se ponen las funciones dentro de las rutas para que estas sean usadas
+3.6 se crea un nuevo archivo index.js en la carpeta controladores
+3.7 se crea una constante y se importan las funciones del archivo de funciones llamado usuarios. controlador. ejemplo: "const usuariosControladores = require("./usuarios.controlador");"
+3.8 Se exportan con "module.exports = {usuariosControladores}"
 
 C. Agregar variables de entorno
 
